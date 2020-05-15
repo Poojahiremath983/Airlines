@@ -1,0 +1,21 @@
+li a {
+    color:black;
+    text-align: center;
+    font-size: x-large;
+}
+  body {
+    background:lightblue url("images/background.gif") no-repeat; 
+    text-align: center;
+    font-size: x-large;
+}
+  h1 {
+    color: black;
+    text-align: center;
+}
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+}
+  

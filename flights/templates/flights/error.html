@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'flights/styles.css' %}">
+
+{% block title %}
+<body style="background-color:rgb(243, 238, 208);"></body>
+    Error
+{% endblock %}
+
+{% block body %}
+    <h1>Error</h1>
+
+    {{ message }}
+
+    <hr>
+
+    <a href="{% url 'index' %}">Return to flights.</a>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'flights/styles.css' %}">
+
+{% block title %}
+    
+{% endblock %}
+
+
+<body style="background-color:rgb(243, 238, 208);">
+
+{% block body %}
+    <h1> Avaliable Flights</h1>
+
+    {% for flight in flights %}
+        <li>
+            <a href="{% url 'flight' flight.id %}">
+                Flight #{{ flight.id }}: {{ flight.origin }} to {{ flight.destination }}
+            </a>
+        </li>
+    {% endfor %}
+{% endblock %}
+</body>
